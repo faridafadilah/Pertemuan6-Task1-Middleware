@@ -37,8 +37,8 @@ app.use(flash());
 // Level MiddleWare
 app.use((req, res, next) => {
   console.log('Time:', Date.now())
-  next()
-})
+  next();
+});
 
 // Menampilkan FIle index.html
 app.get('/', (req, res) => {
